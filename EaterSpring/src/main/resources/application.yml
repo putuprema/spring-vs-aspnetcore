@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/eater
+    username: root
+    password: XXXXXXXXXX
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: PUT_YOUR_JWT_SECRET_HERE
+  issuer: Eater
+  lifetime: 86400
